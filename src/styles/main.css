@@ -55,7 +55,7 @@ div.left-column h2 {
 }
 
 div.left-column h2 > span {
-  color: rgb(110, 6, 242);
+  color: rgb(234, 39, 52);
 }
 
 div.left-column p {
@@ -69,10 +69,10 @@ div.cta {
 }
 
 div.cta > a {
-  width: 150px;
+  width: 180px;
   text-decoration: none;
   color: black;
-  border: 2px solid rgb(110, 6, 242);
+  border: 2px solid rgb(234, 39, 52);
   padding: 8px;
   font-size: 1.1rem;
   text-align: center;
@@ -84,12 +84,12 @@ div.cta > a {
 }
 
 div.cta .contact-cta {
-  background-color: rgb(110, 6, 242);
+  background-color: rgb(234, 39, 52);
   color: aliceblue;
 }
 
 div.cta .contact-cta:hover {
-  background-color: rgb(122, 47, 219);
+  background-color: rgb(186, 24, 35);
 }
 
 div.cta .projects-cta:hover {
@@ -99,10 +99,10 @@ div.cta .projects-cta:hover {
 }
 
 div.right-column > img {
-  height: 300px;
-  width: 300px;
+  height: 330px;
+  width: 330px;
   border-radius: 50%;
-  border: 1px dotted rgb(110, 6, 242);
+  border: 1px dotted rgb(234, 39, 52);
   padding: 1.2rem;
   object-fit: cover;
 }
@@ -146,5 +146,11 @@ div.right-column > img {
 
   .right-column {
     justify-content: center;
+  }
+}
+
+@media (max-width: 330px) {
+  div.cta > a {
+    font-size: 0.9rem;
   }
 }
