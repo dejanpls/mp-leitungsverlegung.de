@@ -1,0 +1,150 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+}
+
+header#about {
+  display: flex;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  width: 100%;
+  scroll-margin-top: 110px;
+  height: 50vh;
+  min-height: 800px;
+}
+
+.left-column {
+  flex: 2 1 0;
+}
+
+.right-column {
+  flex: 1 1 0;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  gap: 1.5rem;
+}
+
+.right-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.left-column h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: -8px;
+}
+
+div.left-column h2 {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.8;
+}
+
+div.left-column h2 > span {
+  color: rgb(110, 6, 242);
+}
+
+div.left-column p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+div.cta {
+  display: flex;
+  gap: 8px;
+}
+
+div.cta > a {
+  width: 150px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgb(110, 6, 242);
+  padding: 8px;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+
+div.cta .contact-cta {
+  background-color: rgb(110, 6, 242);
+  color: aliceblue;
+}
+
+div.cta .contact-cta:hover {
+  background-color: rgb(122, 47, 219);
+}
+
+div.cta .projects-cta:hover {
+  background-color: #24262f;
+  border: 2px solid #24262f;
+  color: aliceblue;
+}
+
+div.right-column > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px dotted rgb(110, 6, 242);
+  padding: 1.2rem;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  div.left-column h1 {
+    font-size: 1.4rem;
+  }
+
+  div.left-column h2 {
+    font-size: 4.8rem;
+  }
+
+  div.left-column p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .left-column {
+    flex: 2 1 400px;
+  }
+
+  div.left-column h1 {
+    font-size: 1.4rem;
+  }
+
+  div.left-column h2 {
+    font-size: 3.5rem;
+  }
+
+  div.left-column p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  header#about {
+    height: 85vh;
+    gap: 2rem;
+  }
+
+  .right-column {
+    justify-content: center;
+  }
+}
