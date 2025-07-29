@@ -24,6 +24,12 @@ nav > a {
   transition: border-bottom 0.2s ease-in-out;
 }
 
-nav > a:hover {
+nav > a:active {
   border-bottom: 3px solid rgb(234, 39, 52);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  nav > a:hover {
+    border-bottom: 3px solid rgb(234, 39, 52);
+  }
 }
