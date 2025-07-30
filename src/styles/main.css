@@ -6,8 +6,8 @@
 }
 
 main {
+  padding: 0 0.5rem;
   width: 100%;
-  max-width: 1200px;
 }
 
 header#about {
@@ -16,12 +16,13 @@ header#about {
   flex-wrap: wrap;
   width: 100%;
   scroll-margin-top: 110px;
-  height: 50vh;
-  min-height: 800px;
+  height: 95vh;
 }
 
 .left-column {
-  flex: 2 1 0;
+  flex-shrink: 1;
+  flex-grow: 3;
+  flex-basis: 0;
 }
 
 .right-column {
@@ -69,7 +70,6 @@ div.cta {
 }
 
 div.cta > a {
-  /* width: 180px; */
   text-decoration: none;
   color: black;
   border: 2px solid rgb(234, 39, 52);
@@ -119,49 +119,26 @@ div.right-column > img {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   div.left-column h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   div.left-column h2 {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
 
   div.left-column p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   div.cta > a {
-    width: 180px;
-
     padding: 0.5rem;
     font-size: 1.1rem;
   }
 }
 
-@media (max-width: 800px) {
-  div.left-column h1 {
-    font-size: 1.4rem;
-  }
-
-  div.left-column h2 {
-    font-size: 4.3rem;
-  }
-
-  div.left-column p {
-    font-size: 1.4rem;
-  }
-
-  div.cta > a {
-    width: 180px;
-
-    padding: 0.5rem;
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 880px) {
   .left-column {
     flex: 2 1 400px;
   }
@@ -179,12 +156,11 @@ div.right-column > img {
     margin-bottom: 8px;
   }
 
-  header#about {
-    height: 85vh;
-    gap: 2rem;
+  .right-column {
+    justify-content: center;
   }
 
-  .right-column {
+  div.cta {
     justify-content: center;
   }
 }
