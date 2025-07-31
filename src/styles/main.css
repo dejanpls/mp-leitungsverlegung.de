@@ -159,7 +159,9 @@ div.right-column > img {
   .right-column {
     justify-content: center;
   }
+}
 
+@media (max-width: 480px) {
   div.cta {
     justify-content: center;
   }
