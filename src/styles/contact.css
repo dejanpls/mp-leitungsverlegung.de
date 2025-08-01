@@ -70,7 +70,7 @@ div.contact-right > img {
   width: 320px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   div.contact-right {
     justify-content: center;
   }
