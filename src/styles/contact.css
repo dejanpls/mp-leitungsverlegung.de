@@ -1,31 +1,31 @@
-section#contact {
+section#kontakt {
   margin: 3rem 0;
   width: 100%;
 }
 
-section#contact > h2 {
+section#kontakt > h2 {
   font-size: 3.5rem;
 }
 
-section#contact > h2 > span {
+section#kontakt > h2 > span {
   color: rgb(234, 39, 52);
 }
 
-p.contact-title {
+p.kontakt-titel {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #24262f;
 }
 
-p.contact-info {
+p.kontakt-info {
   margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: 300;
   color: #24262f;
 }
 
-div.contact-container {
+div.kontakt-container {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,26 +39,26 @@ div.info-container {
   gap: 2rem;
 }
 
-div.contact-left {
+div.kontakt-links {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-div.contact-left div {
+div.kontakt-links div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1.3rem;
 }
 
-div.contact-left .material-icons {
+div.kontakt-links .material-icons {
   font-size: 3rem;
   color: rgb(234, 39, 52);
 }
 
-div.contact-right {
+div.kontakt-rechts {
   flex: 1 1 0;
   height: 400px;
   display: flex;
@@ -66,12 +66,12 @@ div.contact-right {
   align-items: center;
 }
 
-div.contact-right > img {
+div.kontakt-rechts > img {
   width: 320px;
 }
 
 @media (max-width: 768px) {
-  div.contact-right {
+  div.kontakt-rechts {
     justify-content: center;
   }
 }

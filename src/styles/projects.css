@@ -1,9 +1,9 @@
-section#projects > h2 {
+section#leistungen > h2 {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
-section#projects > h2 > span {
+section#leistungen > h2 > span {
   color: rgb(234, 39, 52);
 }
 

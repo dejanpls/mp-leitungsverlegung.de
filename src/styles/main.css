@@ -9,7 +9,7 @@ main {
   max-width: 1200px;
 }
 
-header#about {
+header#ueber-uns {
   display: flex;
   margin: 3rem 0;
   flex-wrap: wrap;
@@ -19,17 +19,17 @@ header#about {
   padding: 0 0.5rem;
 }
 
-.left-column {
+.kolumn-links {
   flex-shrink: 1;
   flex-grow: 3;
   flex-basis: 0;
 }
 
-.right-column {
+.kolumn-rechts {
   flex: 1 1 0;
 }
 
-.left-column {
+.kolumn-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,29 +37,29 @@ header#about {
   gap: 1.5rem;
 }
 
-.right-column {
+.kolumn-rechts {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-div.left-column h1 {
+div.kolumn-links h1 {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: -8px;
 }
 
-div.left-column h2 {
+div.kolumn-links h2 {
   font-size: 6rem;
   font-weight: 800;
   line-height: 0.8;
 }
 
-div.left-column h2 > span {
+div.kolumn-links h2 > span {
   color: rgb(234, 39, 52);
 }
 
-div.left-column p {
+div.kolumn-links p {
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -83,22 +83,22 @@ div.cta > a {
     border 0.3s ease-in-out;
 }
 
-div.cta .contact-cta {
+div.cta .kontakt-cta {
   background-color: rgb(234, 39, 52);
   color: aliceblue;
 }
 
-div.cta .contact-cta:active {
+div.cta .kontakt-cta:active {
   background-color: rgb(186, 24, 35);
 }
 
-div.cta .projects-cta:active {
+div.cta .ueber-uns-cta:active {
   background-color: #24262f;
   border: 2px solid #24262f;
   color: aliceblue;
 }
 
-div.right-column > img {
+div.kolumn-rechts > img {
   height: 320px;
   width: 320px;
   border-radius: 50%;
@@ -108,11 +108,11 @@ div.right-column > img {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  div.cta .contact-cta:hover {
+  div.cta .kontakt-cta:hover {
     background-color: rgb(186, 24, 35);
   }
 
-  div.cta .projects-cta:hover {
+  div.cta .ueber-uns-cta:hover {
     background-color: #24262f;
     border: 2px solid #24262f;
     color: aliceblue;
@@ -120,15 +120,15 @@ div.right-column > img {
 }
 
 @media (max-width: 1000px) {
-  div.left-column h1 {
+  div.kolumn-links h1 {
     font-size: 1.3rem;
   }
 
-  div.left-column h2 {
+  div.kolumn-links h2 {
     font-size: 5rem;
   }
 
-  div.left-column p {
+  div.kolumn-links p {
     font-size: 1.3rem;
   }
 
@@ -139,24 +139,24 @@ div.right-column > img {
 }
 
 @media (max-width: 880px) {
-  .left-column {
+  .kolumn-links {
     flex: 2 1 400px;
   }
 
-  div.left-column h1 {
+  div.kolumn-links h1 {
     font-size: 1.4rem;
   }
 
-  div.left-column h2 {
+  div.kolumn-links h2 {
     font-size: 3.5rem;
   }
 
-  div.left-column p {
+  div.kolumn-links p {
     font-size: 1.2rem;
     margin-bottom: 8px;
   }
 
-  .right-column {
+  .kolumn-rechts {
     justify-content: center;
   }
 }
