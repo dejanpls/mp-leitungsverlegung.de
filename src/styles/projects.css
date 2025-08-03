@@ -26,7 +26,7 @@ p.intro {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   gap: 1rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   margin: 0 auto;
   background-color: #ffffff;
 }
